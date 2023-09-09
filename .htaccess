@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^estructurasmatilla\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.estructurasmatilla\.com$
+RewriteRule ^servicios$ "https\:\/\/estructurasmatilla\.com\/servicios\.html" [R=301,L]
+RewriteRule ^trabajos$ "https\:\/\/estructurasmatilla\.com\/trabajos\.html" [R=301,L]
+RewriteRule ^contacto$ "https\:\/\/estructurasmatilla\.com\/contacto\.html" [R=301,L]
+
+# Impedir que otros sitios web enlacen a las imágenes
+# RewriteRule \.(jpg|jpeg|png|gif)$ - [NC,F,L]
